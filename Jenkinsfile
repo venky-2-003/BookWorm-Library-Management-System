@@ -1,11 +1,7 @@
 pipeline {
     agent any
 
-    environment {
-        DOCKER_HUB_CREDENTIALS = credentials('dockerhub-creds')  // Add credentials in Jenkins
-        DOCKER_IMAGE = "your-dockerhub-username/bookworm-library-management-system"
-        CONTAINER_NAME = "bookworm-erd"
-    }
+   
 
     stages {
         stage('Checkout Code') {
